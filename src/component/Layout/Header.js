@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import classes from './Header.module.css';
 import HeaderCartButton from "./HeaderCartButton";
 import mealsImage from '../../assets/meals.jpg'
+import MealsSummary from "../Meals/MealsSummary";
 
 const Header = props => {
     return (
@@ -11,8 +12,9 @@ const Header = props => {
                 <HeaderCartButton />
             </header>
             <div className={classes['main-image']}>
-                <img src={mealsImage} alt="Hello"/>
+                <img src={mealsImage} alt="Hello" />
             </div>
+            <MealsSummary />
 
         </Fragment>
     );
